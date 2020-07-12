@@ -1,0 +1,15 @@
+{
+  "name": "owasp-top10-demo",
+  "version": "1.0.0",
+  "description": "A demo of some common injections in the OWASP Top 10",
+  "keywords": [
+    "owasp",
+    "top",
+    "ten",
+    "10",
+    "t10",
+    "demo"
+  ],
+  "author": "Allon Mureinik",
+  "license": "MIT"
+}
