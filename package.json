@@ -14,6 +14,7 @@
   "license": "MIT",
   "dependencies": {
     "express": "^4.17.1",
-    "libxmljs": "^0.19.7"
+    "libxmljs": "^0.19.7",
+    "sqlite3": "^5.0.0"
   }
 }
