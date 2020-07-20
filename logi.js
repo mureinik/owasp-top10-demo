@@ -17,6 +17,6 @@ app.post('/logi', function(req, res) {
     // Enterprise-grade logging FTW!
     console.log(username + ' logged in.');
     res.end('Logged in with the honor system');
-})
+});
 
 app.listen(port, () => console.log(`Example app listening at http://localhost:${port}`))
