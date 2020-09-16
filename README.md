@@ -6,6 +6,12 @@ Recording: Will be shared after the conference
 
 Slides: Will be shared after the conference
 
+## Warning
+
+These demos contain intentionally vulnerable code.
+
+Do not run any of them on a machine which can be accessed by external users.
+
 ## Prerequisites
 1. [Git](https://git-scm.com/) - For cloning the repo
 2. [npm](https://www.npmjs.com/get-npm)
