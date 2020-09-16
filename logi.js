@@ -13,9 +13,10 @@ app.use('/', staticServer('./static/'));
 app.post('/logi', function(req, res) {
     // We trust our users, every login will be successful!
     const username = req.body.username;
+    const password = req.body.password;
 
     // Enterprise-grade logging FTW!
-    console.log(username + ' logged in.');
+    console.log(`${username} logged in with the password: ${password}.`);
     res.end('Logged in with the honor system');
 });
 
