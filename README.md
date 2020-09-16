@@ -126,3 +126,12 @@ curl -X POST -H "Content-Type: text/plain" -d '{"key": "_$$ND_FUNC$$_function ()
 
 You'll see the text "userialized!" printed out in the application's console, proving that arbitrary code could be
 executed. Of course, you could use more malicious code than `console.log`.
+
+### A9:2017 Using Components with Known Vulnerabilities
+
+Run an audit:
+```
+npm audit
+```
+
+You will see the vulnerable packages this project depends on.
