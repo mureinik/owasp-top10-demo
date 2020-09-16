@@ -15,4 +15,4 @@ app.get('/example', function(req, res) {
     res.end(`I'm in danger!`);
 });
 
-app.listen(port, () => console.log(`Example app listening at http://localhost:${port}`))
+app.listen(port, () => console.log(`Example app listening at http://localhost:${port}`));

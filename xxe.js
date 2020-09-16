@@ -13,4 +13,4 @@ app.post('/xxe', function(req, res) {
     res.end('Name is: ' + name);
 });
 
-app.listen(port, () => console.log(`Example app listening at http://localhost:${port}`))
+app.listen(port, () => console.log(`Example app listening at http://localhost:${port}`));

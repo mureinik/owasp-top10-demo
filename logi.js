@@ -19,4 +19,4 @@ app.post('/logi', function(req, res) {
     res.end('Logged in with the honor system');
 });
 
-app.listen(port, () => console.log(`Example app listening at http://localhost:${port}`))
+app.listen(port, () => console.log(`Example app listening at http://localhost:${port}`));
