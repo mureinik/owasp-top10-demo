@@ -72,3 +72,18 @@ curl -d '<!DOCTYPE foo [<!ENTITY xxe SYSTEM "/full/path/to/owasp-top10-demo/secr
 ```
 
 And you should get back the **contents** of the [secret.txt](secret.txt) file, i.e., `THIS IS A SECRET!!!`.
+
+### A5:2017 Broken Access Control
+
+Run the session demo:
+```
+node session.js
+```
+
+If you your browser to navigate to http://localhost:3000/data you'll get an error stating `not logged in`, which is 
+expected.
+You can navigate to http://localhost:3000/session.html and use the credentials `user1`/`password1` to log in, after
+which you'll be redirected to http://localhost:3000/data?username=user1 and we that user's data. Similarly, you can use
+the credentials `user2`/`password2`, and will see a different set of data. However, if you log in as `user1`, you could
+manually navigate to http://localhost:3000/data?username=user2, and will see that user's data.
+In other words, this demo implements **authentication**, but does not implement **authorization**.
