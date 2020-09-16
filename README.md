@@ -21,3 +21,20 @@ Install the dependencies:
 ```
 npm install
 ```
+
+## Demos
+
+### A1:2017 - Injection
+
+Run the Log Injection demo:
+```
+node logi.js
+```
+
+Send a payload of the form `username=XYZ logged in.\nABC&password=123`:
+
+```
+curl -d $'username=allon logged in.\nmureinik&password=123' http://localhost:3000/logi
+```
+
+You'll see two log in messages in the application's console.
