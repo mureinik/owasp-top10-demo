@@ -94,3 +94,20 @@ There are several security misconfigurations in these demos. A few obvious ones 
 - All the demos serve HTTP and not HTTPS
 - [xxe.js](xxe.js) sets `noent: true` when creating the libxmljs parser, thus making the demo vulnerable to XXE
 - [session.js](session.js) uses Express Session, but uses the default configuration (e.g., it doesn't set the `secure` or `maxAge` properties)
+
+### A7:2017 Cross-Site Scripting (XSS)
+
+Run the XSS demo:
+```
+node xss.js
+```
+
+If you use your browser to navigate to http://localhost:3000/xss, you'll see a comments form where you could add your
+opinion of DevConf.us and view previous comments
+
+Send a payload of the following form:
+```
+curl -X POST -d 'comment=<script>window.location.replace("https://github.com/mureinik/owasp-top10-demo")</script>' http://localhost:3000/xss
+```
+
+The next time you navigate to http://localhost:3000/xss, you'll be redirected to this README page.
