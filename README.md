@@ -135,3 +135,15 @@ npm audit
 ```
 
 You will see the vulnerable packages this project depends on.
+
+### A10:2017 Insufficient Logging & Monitoring
+
+Run the session demo:
+```
+node session.js
+```
+
+Use your browser to navigate to http://localhost:3000/session.html. 
+If you use the wrong credentials (e.g., `wronguser`/`wrongpassword`) you'll get an error message, but nothing will be
+logged.
+In fact, this "application" doesn't even have any real logs. 
