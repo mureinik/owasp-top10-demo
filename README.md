@@ -38,3 +38,13 @@ curl -d $'username=allon logged in.\nmureinik&password=123' http://localhost:300
 ```
 
 You'll see two log in messages in the application's console.
+
+### A2:2017 - Broken Authentication
+
+Run the login demo:
+```
+node logi.js
+```
+
+Open your browser and navigate to http://localhost:3000/logi.html. As you can easily see, any combination of username
+and password will be accepted by the system. A proper system should have real user management implemented.
