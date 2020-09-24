@@ -4,7 +4,8 @@ This repo contains the code examples shared in my [DevConf.us 2020 talk](https:/
 
 Recording: Will be shared after the conference
 
-Slides: Will be shared after the conference
+Slides:
+[SlideShare](https://www.slideshare.net/AllonMureinik/devconfus-2020-owasp-top-10-allon-mureinik)
 
 ## Warning
 
