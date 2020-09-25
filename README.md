@@ -2,7 +2,8 @@
 
 This repo contains the code examples shared in my [DevConf.us 2020 talk](https://devconfus2020.sched.com/event/eb6835469f571956a331b8382b8ca0a9).
 
-Recording: Will be shared after the conference
+Recording: [Pre-recorded
+backup](https://www.youtube.com/watch?v=Unf-U_hPpH4&list=PL1nvafMwjHaDkO-1yyJ4PlJiutiMQyztA)
 
 Slides:
 [SlideShare](https://www.slideshare.net/AllonMureinik/devconfus-2020-owasp-top-10-allon-mureinik)
