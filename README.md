@@ -1,4 +1,4 @@
-# OWASP Top-10 - quickstart your security awareness
+# OWASP Top-10 (2017) - Quickstart your security awareness
 
 This repo contains the code examples shared in my [DevConf.us 2020 talk](https://devconfus2020.sched.com/event/eb6835469f571956a331b8382b8ca0a9).
 
