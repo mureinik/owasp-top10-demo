@@ -73,7 +73,7 @@ to log in, and the password will be presented in plain text in the application's
 
 Run the XXE demo:
 ```
-node logi.js
+node xxe.js
 ```
 
 Send a payload with the following form:
