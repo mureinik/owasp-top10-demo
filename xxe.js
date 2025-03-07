@@ -8,7 +8,7 @@ const libxmljs = require('libxmljs');
 
 app.use(bodyParser.text({type: '*/*'}));
 app.post('/xxe', function(req, res) {
-    const parsed = libxmljs.parseXml(req.body, {noent: true});
+    const parsed = libxmljs.parseXml(req.body, {replaceEntities: true});
     const name = parsed.get('//name').text();
     res.end('Name is: ' + name);
 });
