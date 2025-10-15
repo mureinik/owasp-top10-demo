@@ -16,7 +16,7 @@
     "express": "^4.17.1",
     "express-session": "^1.17.1",
     "helmet": "^3.23.3",
-    "libxmljs": "^0.19.7",
+    "libxmljs": "^1.0.11",
     "node-serialize": "0.0.4",
     "sqlite3": "^5.0.0"
   }
